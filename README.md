@@ -1,8 +1,10 @@
 # Pretrained_Model_Alignment
 将视觉预训练模型与文字预训练模型进行对齐，可用于零样本学习。Aligning visual pre-trained models with text pre-trained models. Can be applied to zero-shot learning.
 
-## 项目介绍 (Project Introduction)
 > both in Chinese and English. The translation is assisted by gpt.
+
+
+### 项目介绍 (Project Introduction)
 
 在许多情况下，我们所拥有的资源仅仅是分别在文字或图片数据集上预训练好的单模态预训练模型。鉴于此，本项目的目标是通过少量的训练，使得两个不同模态的预训练模型（文字与图片）能够实现对齐。值得注意的是，本项目所用的对齐数据集并非类似于CLIP所需的海量“图像-描述”数据集，而是一个普通的图像多分类数据集。
 
@@ -28,7 +30,7 @@ In addition to the commonly used cosine similarity, this project also designed a
 
 **Fig 2. Similarity Model Structure**
 
-## 如何使用 (How to use it)
+### 如何使用 (How to use it)
 
 1. 请首先克隆该仓库。
 2. 下载AwA2数据集，下载链接为：[AwA2](https://cvml.ista.ac.at/AwA2/AwA2-data.zip)。该数据集包含50个类别，尽管数据集中为每个类别提供了详细的属性信息，但在实验中并未直接使用这些属性。我们在训练阶段对40个类别进行对齐操作，并在剩余的10个类别上进行测试，以验证模型在对齐后的零样本学习能力。请注意，将本项目提供的`Animals_with_Attributes2/class.txt`文件放置在数据集文件夹中。该文件将作为每个类别的描述使用，不过也可以使用同一文件夹中的其他三个描述文件进行实验（强烈建议实验`Animals_with_Attributes2/class_sentence.txt`文件）。
