@@ -21,7 +21,7 @@ def main():
          transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])
 
     # Create dataset and dataloader
-    dataset = ImageDataset(root_dir="E:\大学本科课程\大三4\项目\Animals_with_Attributes2\JPEGImages", transform=data_transform)
+    dataset = ImageDataset(root_dir=".\Animals_with_Attributes2\JPEGImages", transform=data_transform)
     dataloader = DataLoader(dataset, batch_size=4, shuffle=True, num_workers=4)
 
     # create model
