@@ -90,5 +90,5 @@ if __name__ == "__main__":
          transforms.CenterCrop(224),
          transforms.ToTensor(),
          transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])
-    dataset = ImageDataset(root_dir="E:\大学本科课程\大三4\项目\Animals_with_Attributes2", pre_load=False, train=False, transform=data_transform)
+    dataset = ImageDataset(root_dir=".\Animals_with_Attributes2", pre_load=False, train=False, transform=data_transform)
     print(dataset[0])
