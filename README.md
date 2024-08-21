@@ -46,3 +46,5 @@ In addition to the commonly used cosine similarity, this project also designed a
 5. Run the `train.py` script to begin training.
 6. Through experimentation, we found that fine-tuning the ViT model combined with using the Siamese neural network similarity measure yields better results. During training, it is important to select a smaller learning rate, and the learning rate for the similarity network should be lower than that of the fine-tuned ViT model (as the similarity network tends to fit faster).
 
+
+## If you have any question of the code, please contact me or leave an issue. My email:1793706453@qq.com
