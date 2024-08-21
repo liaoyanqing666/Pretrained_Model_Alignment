@@ -1,4 +1,4 @@
-![~_V7{$30YXR_WM55~OIW`I1](https://github.com/user-attachments/assets/c5ef6771-8193-4195-8ebe-cf4a460c87f6)# Pretrained_Model_Alignment
+# Pretrained_Model_Alignment
 将视觉预训练模型与文字预训练模型进行对齐，可用于零样本学习。Aligning visual pre-trained models with text pre-trained models, enabling zero-shot learning.
 
 在许多情况下，我们所拥有的资源仅仅是分别在文字或图片数据集上预训练好的单模态预训练模型。鉴于此，本项目的目标是通过少量的训练，使得两个不同模态的预训练模型（文字与图片）能够实现对齐。值得注意的是，本项目所用的对齐数据集并非类似于CLIP所需的海量“图像-描述”数据集，而是一个普通的图像多分类数据集。
@@ -12,3 +12,5 @@ The core idea of this project is to convert the categories in the image classifi
 ![model](images/model_description.png)
 
 **Fig 1. Model structure**
+
+除了常用的余弦相似度，本项目还设计了一个孪生神经网络相似度，使其在两个预训练模型嵌入维度不同的情况下也可用。其中两个孪生分支的参数可以相同也可以不相同（根据具体实验需求）
