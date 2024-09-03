@@ -14,7 +14,7 @@
 
 ---
 
-**The main purpose of this project is to propose a method to quickly align pre-trained models of different modals.**
+**The main purpose of this project is to propose a method to quickly align pre-trained models of different modal.**
 
 In many cases, the resources we possess are merely unimodal pre-trained models that have been trained separately on either text or image datasets. Therefore, the objective of this project is to achieve alignment between two different modalities of pre-trained models (text and images) with minimal additional training. It is worth noting that the alignment dataset used in this project is not a large-scale "image-description" dataset like that required by CLIP, but rather a standard image classification dataset.
 
